@@ -1,0 +1,7 @@
+{
+    "require": {
+        "mmucklo/krumo": "^0.5.7",
+        "knplabs/github-api": "^2.0",
+        "php-http/guzzle6-adapter": "^1.1"
+    }
+}

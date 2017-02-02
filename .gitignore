@@ -1,0 +1,5 @@
+# Ignore composor dependencies
+vendor
+
+# Ignore PhpStorm
+.idea
