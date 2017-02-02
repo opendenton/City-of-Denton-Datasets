@@ -2,7 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
-$token = 'd95e9973e43753fc786b3535d4828f37b4e3b115';
+$token = 'd95e9973e43753fc786b3535d4828f37b4e3b115'; // Add valid Github token here.
 
 // Github
 $client = new \Github\Client();
