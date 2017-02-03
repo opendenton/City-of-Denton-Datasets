@@ -11,7 +11,7 @@ If you want to play around, or even use this data script for something else, you
 
 `$ git clone git@github.com:OpenDenton/City-of-Denton-Datasets.git`
 
-If you don't have composer installed, download that first.
+If you don't have composer installed, [download that first](https://getcomposer.org/download/).
 
 `$ brew install composer`
 
@@ -21,8 +21,34 @@ or
 
 Then install the dependencies from the root of the repository.
 
-```$ composer install```
+```
+$ composer install
+```
 
 From here, you'll need to [generate a new Github token](https://github.com/settings/tokens), and replace the demo token in the script.
 
-`$token = 'NEW TOKEN HERE`;
+`$token = 'NEW TOKEN HERE'`;
+
+
+## Expected of Each Data Set
+
+Each data set should be usable in a database, and should have variables with which the data set can be merged with other data sets. Barring that, the data should be geocoded (tagged with geographic positioning data, such as latitude and longitude, or state plane coordinates). 
+
+To ensure these data are useful without additional munging, the following should be true:
+
+* Can be imported into any of the usual RDBMSes (MySQL/MariaDB, PostgreSQL, FileMaker Pro, MS Access). Practically, this means: 
+  * the columns are delimited consistently or (less desirable) column separated correctly
+  * variable types aren't mixed within columns (no text in integer columns, etc.)
+  * Text strings are quoted (but this isn't strictly required, provided the text isn't comma-separated)
+  * Ideally, there is exactly one header row, but it's reasonable for some datasets to have two-line records OR lack any header row, provided there is a correct codebook
+
+* Has a unique identifier or a combination of columns that can be assembled into a unique identifier (day/date/month, e.g.)
+
+* Ideally, there is an import file or files for commonly available databases and/or stats packages like R, Stata, PostgreSQL, and MySQL/MariaDB
+
+* Has a codebook describing each data variable (field), variable type, and, where needed, column width
+
+* The user/committer has actually imported the data and confirmed that it worked without errors
+
+
+
