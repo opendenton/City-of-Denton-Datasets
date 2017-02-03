@@ -6,30 +6,6 @@ This repo is meant to provide a collaborative way to assess and discuss the new 
 
 Inside each issue you will see some basic data about the dataset, a link to the dataset on the website, and a summary of the resources for each dataset.
 
-### Issue / Data fetching script
-If you want to play around, or even use this data script for something else, you can clone the repo and use composer to install the dependencies.
-
-`$ git clone git@github.com:OpenDenton/City-of-Denton-Datasets.git`
-
-If you don't have composer installed, [download that first](https://getcomposer.org/download/).
-
-`$ brew install composer`
-
-or
-
-`$ curl -s http://getcomposer.org/installer | php`
-
-Then install the dependencies from the root of the repository.
-
-```
-$ composer install
-```
-
-From here, you'll need to [generate a new Github token](https://github.com/settings/tokens), and replace the demo token in the script.
-
-`$token = 'NEW TOKEN HERE'`;
-
-
 ## Expected of Each Data Set
 
 Each data set should be usable in a database, and should have variables with which the data set can be merged with other data sets. Barring that, the data should be geocoded (tagged with geographic positioning data, such as latitude and longitude, or state plane coordinates). 
@@ -52,5 +28,25 @@ To ensure these data are useful without additional munging, the following should
 
 * If the data are geocoded, they should be easy to import into [QGIS](http://qgis.org) and/or [ArcGIS](http://www.esri.com/), either directly or by merging with an existing GIS coverage
 
+## Issue / Data fetching script
+If you want to play around, or even use this data script for something else, you can clone the repo and use composer to install the dependencies.
 
+`$ git clone git@github.com:OpenDenton/City-of-Denton-Datasets.git`
 
+If you don't have composer installed, [download that first](https://getcomposer.org/download/).
+
+`$ brew install composer`
+
+or
+
+`$ curl -s http://getcomposer.org/installer | php`
+
+Then install the dependencies from the root of the repository.
+
+```
+$ composer install
+```
+
+From here, you'll need to [generate a new Github token](https://github.com/settings/tokens), and replace the demo token in the script.
+
+`$token = 'NEW TOKEN HERE'`;
