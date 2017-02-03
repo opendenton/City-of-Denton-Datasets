@@ -50,5 +50,7 @@ To ensure these data are useful without additional munging, the following should
 
 * The user/committer has actually imported the data and confirmed that it worked without errors
 
+* If the data are geocoded, they should be easy to import into [QGIS](http://qgis.org) and/or [ArcGIS](http://www.esri.com/), either directly or by merging with an existing GIS coverage
+
 
 
