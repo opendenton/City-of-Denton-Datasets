@@ -73,4 +73,5 @@ From here, you'll need to [generate a new Github token](https://github.com/setti
 * `xls`: data are in some Excel version format
 * `text`: data are provided in an ASCII text format
 * `needsupdate`: for time series data, are there missing years (especially the most recent years)?
+* `needscleaning`: Data may be usable but data within columns may be inconsistent or benefit from breaking values out into additional variables (A text field with "Males, 21-34, Causasian - Non-Hispanic" should really be at least four fields)
 * `unclearvariables`: Even if the column headers are in English, if they are imprecise or uncertain, this tag applies
