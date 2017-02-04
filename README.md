@@ -61,8 +61,11 @@ From here, you'll need to [generate a new Github token](https://github.com/setti
 
 ## Tags
 
-* `unusable`
-* `complete` : includes code book, machine-usable data, no missing data, and the columns match the data and expected data types
+* `unusable`: any of a list of conditions that prevent the data from being used --
+  * the data set cannot be read by a computer program
+  * there are no definitions for variables
+  * text data are not represented by either ASCII or Unicode
+* `complete`: includes code book, machine-usable data, no missing data, and the columns match the data and expected data types
 * `incomplete`: missing some element that make the data imperfect or difficult to use; potentially usable but, obviously, not totally finished
 * `gis`: data include a geographic (whether or not they are geocoded) component
 * `nocodebook`: it is not possible to know what the values in a given column mean, for certain, because there is no supporting documentation for the data set
@@ -70,3 +73,4 @@ From here, you'll need to [generate a new Github token](https://github.com/setti
 * `xls`: data are in some Excel version format
 * `text`: data are provided in an ASCII text format
 * `needsupdate`: for time series data, are there missing years (especially the most recent years)?
+* `unclearvariables`: Even if the column headers are in English, if they are imprecise or uncertain, this tag applies
