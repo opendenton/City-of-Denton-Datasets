@@ -65,4 +65,7 @@ From here, you'll need to [generate a new Github token](https://github.com/setti
 * `complete`
 * `incomplete`
 * `gis`
-
+* `nocodebook`
+* `pdf`
+* `xls`
+* `text`
