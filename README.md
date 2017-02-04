@@ -62,10 +62,11 @@ From here, you'll need to [generate a new Github token](https://github.com/setti
 ## Tags
 
 * `unusable`
-* `complete`
-* `incomplete`
-* `gis`
-* `nocodebook`
-* `pdf`
-* `xls`
-* `text`
+* `complete` : includes code book, machine-usable data, no missing data, and the columns match the data and expected data types
+* `incomplete`: missing some element that make the data imperfect or difficult to use; potentially usable but, obviously, not totally finished
+* `gis`: data include a geographic (whether or not they are geocoded) component
+* `nocodebook`: it is not possible to know what the values in a given column mean, for certain, because there is no supporting documentation for the data set
+* `pdf`: data are in PDF format, either machine-readable or scanned images
+* `xls`: data are in some Excel version format
+* `text`: data are provided in an ASCII text format
+* `needsupdate`: for time series data, are there missing years (especially the most recent years)?
