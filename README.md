@@ -57,3 +57,12 @@ $ composer install
 From here, you'll need to [generate a new Github token](https://github.com/settings/tokens), and replace the demo token in the script.
 
 `$token = 'NEW TOKEN HERE'`;
+
+
+## Tags
+
+* `unusable`
+* `complete`
+* `incomplete`
+* `gis`
+
