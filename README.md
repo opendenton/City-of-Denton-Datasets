@@ -28,6 +28,13 @@ To ensure these data are useful without additional munging, the following should
 
 * If the data are geocoded, they should be easy to import into [QGIS](http://qgis.org) and/or [ArcGIS](http://www.esri.com/), either directly or by merging with an existing GIS coverage
 
+## What's Missing? Is It Useful?
+
+It's possible that the data are usable but less useful than they could be, if, for instance, the data were in a different format, or if they contained an additional variable or level of analysis. A "wish list" for *reasonable* changes or upgrades is also potentially useful for the data catalog, moving forward.
+
+
+Additionally, a measure of usability is valuable. Please tag each data set with "usable", "unusable", "needs repair", etc.
+
 ## Issue / Data fetching script
 If you want to play around, or even use this data script for something else, you can clone the repo and use composer to install the dependencies.
 
